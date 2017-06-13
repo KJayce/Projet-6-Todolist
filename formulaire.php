@@ -12,3 +12,9 @@ $task = $_POST["task"];
 sanitization($task);
 $taskTab = array();
 print_r($taskTab);
+
+if ($task) {
+    $file = "todo.json";
+    
+
+}
