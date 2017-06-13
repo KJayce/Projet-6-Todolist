@@ -13,7 +13,8 @@
 $task = $_POST["task"];
 sanitization($task);
 $taskTab = array();
-print_r($taskTab);
+
+//print_r($taskTab);
 
 //Sanitize task contents
 
@@ -21,6 +22,7 @@ print_r($taskTab);
 $task = sanitization($_POST['task']);
 
 if($task){
+    if (!empty($task)){
     $file = "todo.json"; //Define variable where for wich file were going to send data to
 
     $taskTab = []; // Create an empty array wich will contain our task ,(when we create the code the task dont exist yet!)
@@ -41,4 +43,5 @@ if($task){
 
 } else {
     $message1 = "Please add a task."; // after form completion message if done wrong
+}
 }

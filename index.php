@@ -18,13 +18,15 @@
 </head>
 <body>
 
-    <form class="addtask" action="" method="post">
+    <form class="addtask" action="" method="post" id="taskform">
     <div class="form-group">
 
         <label for="task">Add Task:</label>
         <input type="text" name="task" value="" text>
+
         <?php echo $message1; ?>
-        <button type="submit">Enregistrer</button>
+        
+        <button type="submit" form="taskform" name="adding">Enregistrer</button>
         
         </div>
     </form>
