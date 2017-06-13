@@ -1,4 +1,9 @@
-<!-- includes are for function stockage -->
+<!-- includes are usually used to for functions stockage, it is not advised to used them like follows -->
+
+<?php include "formulaire.php" ?>
+<?php include "contenu.php" ?>
+
+
 
 
 <!DOCTYPE html>
@@ -15,7 +20,7 @@
 </head>
 <body>
 
-    <form class="addtask" action="" method="post" id="taskform" action="formulaire.php">
+    <form class="addtask" action="" method="post" id="taskform">
     <div class="form-group">
 
         <label for="task">Add Task:</label>
@@ -25,9 +30,16 @@
 
         <button type="submit" form="taskform" name="adding">Enregistrer</button>
 
-        <?php 
-            
-        
+        <?php
+        $tabElem ="";
+        $list= "";
+            foreach ($taskTab as $value){
+                $list = $tabElem . $value;
+
+
+            }
+            print_r($taskTab);
+            echo "ici est le $list" . $list;
         ?>
 
         </div>
