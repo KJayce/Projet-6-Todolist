@@ -17,8 +17,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        
+    <form class="addtask" action="" method="post">
+        <label for="task">Add Task:</label>
+        <input type="text" name="task" value="" text>
+        <<button type="submit">Enregistrer</button>
     </form>
 </body>
 </html>
