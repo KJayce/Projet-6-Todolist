@@ -20,9 +20,11 @@
 
     <form class="addtask" action="" method="post">
     <div class="form-group">
+
         <label for="task">Add Task:</label>
         <input type="text" name="task" value="" text>
         <button type="submit">Enregistrer</button>
+        
         </div>
     </form>
 </body>
