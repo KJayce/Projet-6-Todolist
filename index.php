@@ -29,7 +29,9 @@
         <button type="submit" form="taskform" name="adding">Enregistrer</button>
 
         <?php 
-            <input type="checkbox" name="done" value=""> <?php ?>
+            for (){
+
+            }
         
         ?>
 
