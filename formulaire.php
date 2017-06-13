@@ -15,6 +15,7 @@ print_r($taskTab);
 
 if ($task) {
     $file = "todo.json";
+    $Jsondata = file($file)
     
 
 }
