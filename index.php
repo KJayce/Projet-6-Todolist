@@ -23,6 +23,7 @@
 
         <label for="task">Add Task:</label>
         <input type="text" name="task" value="" text>
+        <?php echo $message1; ?>
         <button type="submit">Enregistrer</button>
         
         </div>
