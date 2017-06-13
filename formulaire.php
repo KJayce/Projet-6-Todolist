@@ -4,7 +4,7 @@
         $data = trim($data);
         $data = stripslashes($data);
         $data = htmlspecialchars($data);
-
+        $date = filter_var();
         return $data;
 }
 
