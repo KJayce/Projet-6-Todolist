@@ -1,7 +1,4 @@
-<?php include "formulaire.php" ?>
-<?php include "contenu.php" ?>
-
-
+<!-- includes are for function stockage -->
 
 
 <!DOCTYPE html>
@@ -18,7 +15,7 @@
 </head>
 <body>
 
-    <form class="addtask" action="" method="post" id="taskform">
+    <form class="addtask" action="" method="post" id="taskform" action="formulaire.php">
     <div class="form-group">
 
         <label for="task">Add Task:</label>
@@ -29,9 +26,7 @@
         <button type="submit" form="taskform" name="adding">Enregistrer</button>
 
         <?php 
-            for (){
-
-            }
+            
         
         ?>
 
