@@ -25,9 +25,14 @@
         <input type="text" name="task" value="" text>
 
         <?php echo $message1; ?>
-        
+
         <button type="submit" form="taskform" name="adding">Enregistrer</button>
+
+        <?php 
+            <input type="checkbox" name="done" value=""> <?php ?>
         
+        ?>
+
         </div>
     </form>
 </body>
