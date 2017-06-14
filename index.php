@@ -31,14 +31,16 @@
         <button type="submit" form="taskform" name="adding">Enregistrer</button>
 
         <?php
-        $tabElem ="";
-        $list= "";
-            foreach ($taskTab as $value){
-                $list = $tabElem . $value;
+        $status ="";
+        $key= "";
+            foreach ($tasksArray as $value){
+            ?>
+            <input type="checkbox" name="$key" value="$status">  <!--create $key and $status var later -->
+            <?php 
 
 
             }
-            print_r($taskTab);
+            print_r($tasksArray);
             echo "ici est le $list" . $list;
         ?>
 
