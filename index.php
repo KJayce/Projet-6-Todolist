@@ -35,14 +35,10 @@
         $key= "";
             foreach ($tasksArray as $value){  //the foreach function is to use only for array & objects
             ?>
-            <input type="checkbox" name="$key" value="$status">  <!--create $key and $status var later -->
+            <input type="checkbox" name="$key" value="$status">  <?php echo $value ?> <!--create $key and $status var later -->
             <?php 
-
-
-            }
-            print_r($tasksArray);
-            echo "ici est le $list" . $list;
-        ?>
+            
+            ?>
 
         </div>
     </form>
