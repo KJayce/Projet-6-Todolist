@@ -12,6 +12,7 @@
 if (!empty($_POST["task"])){
     $task = $_POST["task"];
     $task=sanitization($task);
+    $taskArray[]= "";
     //stock task in tasksarray and stock tasks in todo.json
 
     //print_r($tasksArray);
@@ -21,18 +22,18 @@ if (!empty($_POST["task"])){
     //print_r($task);
 
     $file = "todo.json"; //Define variable for wich file were going to send data to
-
-    $tasksArray = []; // Create an empty array wich will contain our task ,(when we create the code the task dont exist yet!)
+    //$taskArray1 = []; 
+    $tasksArray1 = ['task'=>$task, 'status'=>true]; // Create an empty array wich will contain our task ,(when we create the code the task dont exist yet!)
 
     $Jsondata = file_get_contents($file); // Define variable in wich file the .Json file is gonna get its content
 
-    $tasksArray = json_decode($Jsondata); // Define a variable for the php => .json translation
+    $tasksArray1 = json_decode($Jsondata,true); // Define a variable for the php => .json translation
 
-    array_push($tasksArray, $task); // The two arguments in the array_push are for the array wich will contain the added elements
+    array_push($tasksArray1, $tasksArray); // The two arguments in the array_push are for the array wich will contain the added elements
 
-    print_r($tasksArray);
+    print_r($tasksArray1);
 
-    $update = json_encode($tasksArray, JSON_PRETTY_PRINT ); // Defining a variable allowing .json => php translation
+    $update = json_encode($tasksArray1, JSON_PRETTY_PRINT ); // Defining a variable allowing .json => php translation
 
     file_put_contents($file, $update); // Adding the $update variable's content to $file
 
