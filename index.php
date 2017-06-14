@@ -28,14 +28,15 @@
 
         <?php echo $message1; ?>
 
-        <button type="submit" form="taskform" name="adding">Enregistrer</button>
+        <button type="submit" form="taskform" name="adding">Enregistrer</button> <br>
 
         <?php
         $status ="";
         $key= "";
-            foreach ($tasksArray1 as $key => $value){  //the foreach function is to use only for array & objects
+            foreach ($tasksArray as &$value){//the foreach function is to use only for array & objects
+            ;
             ?>
-            <input type="checkbox" name="$key" value="$status">  <?php echo $value ?> <!--create $key and $status var later -->
+            <input type="checkbox" name="$key" value="$status">  <?php echo $key?> <br><!--create $key and $status var later -->
             
             <?php 
             } // you can separate a php code in two and make the last piece of code close the preceding codes with a }
