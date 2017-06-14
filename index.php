@@ -33,7 +33,7 @@
         <?php
         $status ="";
         $key= "";
-            foreach ($tasksArray as $value){
+            foreach ($tasksArray as $value){  //the foreach function is to use only for array & objects
             ?>
             <input type="checkbox" name="$key" value="$status">  <!--create $key and $status var later -->
             <?php 
