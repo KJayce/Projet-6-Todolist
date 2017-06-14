@@ -36,9 +36,13 @@
             foreach ($tasksArray as $value){  //the foreach function is to use only for array & objects
             ?>
             <input type="checkbox" name="$key" value="$status">  <?php echo $value ?> <!--create $key and $status var later -->
-            <?php 
             
-            ?>
+            <?php 
+
+
+            }
+
+        ?>
 
         </div>
     </form>
