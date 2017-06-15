@@ -16,6 +16,7 @@
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
 
         <?php echo $message1; ?>
 
-        <button type="submit" form="taskform" name="adding">Enregistrer</button> <br>
+        <button class="btn-default" type="submit" form="taskform" name="adding">Enregistrer</button> <br>
 
         <?php
         $status ="";
@@ -41,6 +42,8 @@
             <?php 
             } // you can separate a php code in two and make the last piece of code close the preceding codes with a }
         ?>
+
+        <button class="btn-success" type="submit" form="taskform" name="valid">Validate</button>
 
         </div>
     </form>
